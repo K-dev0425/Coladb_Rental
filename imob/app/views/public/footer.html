@@ -1,0 +1,96 @@
+		<div class="[inSH] text-center">
+		<!-- INSTAGRAM WIDGET -->
+			<script src="js/jquery/instastory.js" type="text/javascript"></script>
+			<!-- ALTERE O NOME E URL DO INSTAGRAM ABAIXO-->			
+			<br><h3 class="bd"><strong><i class="fa fa-instagram"></i> Siga-nos no Instagram: <a target="_blank" href="https://www.instagram.com/instagram">@INSTAGRAM</a></strong></h3>
+			<br>
+			<div class="text-center playground" style="margin-bottom: 20px;">
+			  <div id="insta" class="result"></div>
+			</div>
+		</div>
+		
+<br><br>
+
+<div id="footer">
+	<div class="container">
+	
+		<div class="col-lg-12 col-md-12">
+		
+			<div class="col-lg-3 col-md-3">
+		
+			
+			  <img src="[baseURi]/app/images/layout/bg_logo_footer.png" width="200" height="120" alt="logo" />
+           
+			</div>
+
+			<div class="col-lg-3 col-md-3">
+			<h3>[config_site_title]</h3>
+			<ul>
+			<li><p><a href="[baseUri]/pagina/sobre/">Sobre Nós</a></p></li>
+			<li><p><a href="[baseUri]/pagina/contato/">Fale Conosco</a></p></li>
+			<li><p><a href="javascript:;" class="go-top">Voltar ao Topo</a></p></li>
+			</ul>
+			</div>
+
+			<div class="col-lg-3 col-md-3">
+			<h3>Contatos</h3>
+			<ul>
+			<li><p>[cliente_telefone1]</p></li>
+			<li><p>[cliente_telefone2]</p></li>
+			<li><p>[smtp_username]</p></li>
+			</ul>
+			</div>
+
+
+			<div class="col-lg-3 col-md-3">
+			<h3>Localização</h3>
+			<ul>
+			<li>
+			<p>
+			[cliente_rua], Nº [cliente_num]
+			<br>
+			[cliente_bairro]
+			<br>
+			[cliente_cidade] - [cliente_uf]</p>
+			</li>
+			</ul>
+			</div>
+		</div>
+
+	</div>  	<br>
+			<div class="text-center">
+				<div class="text-right">
+					<!-- ALTERE A URL OU REMOVA A LINHA DA REDE SOCIAL ABAIXO ABAIXO-->
+                    <a href="https://web.facebook.com/" class="[faceSH]" target="_blank"> <i class="fa fa-facebook-square fa-3x text-white"></i></a>
+                    <a href="https://instagram.com/" class="[inSHs]" target="_blank"> <i class="fa fa-instagram fa-3x text-white"></i></a>
+                    <a href="https://twitter.com/" class="[twSH]" target="_blank"> <i class="fa fa-twitter-square fa-3x text-white mar-left-3"></i></a>
+                    <a href="https://www.youtube.com/" class="[ytSH]" target="_blank"> <i class="fa fa-youtube-square fa-3x text-white mar-left-3"></i></a>
+					<a href="" class="" target=""> &nbsp &nbsp<i class=""></i></a>
+				</div>
+			</div>	
+<br>
+
+	<?php include 'fb.html';?>
+
+<br>
+			<p align="center"><b>[config_site_title] - CRECI: [cliente_creci]</b> - Todos os Direitos Reservados</p>
+</div>
+
+
+
+
+<link href="css/public/inst.php" rel="stylesheet" type="text/css"/>  
+<script type="text/javascript">
+	$("#insta").instastory({
+        template: '<div class="col-md-2 col-xs-4" style="margin-bottom: 10px;"><div class="post"><a href="{{link}}" target="_blank"><img src="{{image}}" alt="{{accessibility_caption}}"><span class="meta"><p>{{caption}}</p><span class="stats"><span class="likes"><i class="fa fa-heart"></i>{{likes}}</span><span class="comments"><i class="fa fa-comment"></i>{{comments}}</span></span></a></div></div>',
+        get: "instagram",
+        link: true,
+        imageSize: 480, //150, 240, 320, 480, 640
+        limit: 12
+    });
+</script>
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+<a href="https://wa.me/55[cliente_telefone3]" style="position:fixed;width:60px;height:60px;bottom:40px;right:60px;background-color:#25d366;color:#FFF;border-radius:50px;text-align:center;font-size:30px;box-shadow: 1px 1px 2px #888;
+  z-index:1000;" target="_blank">
+<i style="margin-top:16px" class="fa fa-whatsapp"></i></a>

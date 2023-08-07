@@ -1,0 +1,1 @@
+var months			= ['Janeiro','Fevereiro','Março','Abril','Maio','Junho','Julho','Agosto','Setembro','Outubro','Novembro','Dezembro'],	days			= ['Seg','Ter','Qua','Qui','Sex','Sab','Dom'],	errorMessage	= 'erro ao carregar eventos...';
