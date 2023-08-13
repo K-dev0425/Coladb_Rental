@@ -8,7 +8,7 @@
 		<medium maxw="600" maxh="600"/>
 		<small maxw="400" maxh="400"/>
 	</medias>
-	<list order="id_room, start_date, id_package">
+	<list order="id">
 		<filter label="[ROOM]" name="id_room">
 			<options table="pm_room" fieldlabel="id - title | subtitle" fieldvalue="id" order="title"/>
 		</filter>
