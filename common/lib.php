@@ -462,17 +462,17 @@ function db_getRequestSelect($db, $table, $cols, $q, $condition_sup = '', $order
     $query = 'SELECT * FROM '.$table;
     
     $condition = $condition_sup;
-    
+
     foreach($cols as $j => $col){
         $arr_colname = preg_split('/([^a-z0-9_]+)/i', $col);
-        
+
         if($condition_sup != '' && $j == 0) $condition .= ' AND (';
             
         $nb_subcols = count($arr_colname);
         foreach($arr_colname as $i => $str_colname){
-            
+
             $col_type = db_column_type($db, $table, $str_colname);
-            
+
             if(preg_match('/.*(char|text).*/i', $col_type) !== false) $str_colname = 'UPPER('.$str_colname.')';
             
             $condition .= '('.$str_colname.' LIKE '.$db->quote('%'.$q.'%').') ';
@@ -485,7 +485,7 @@ function db_getRequestSelect($db, $table, $cols, $q, $condition_sup = '', $order
     }
     
     $query .= ($condition != '') ? ' WHERE '.$condition : '';
-        
+
     if($order != '') $query .= ' ORDER BY '.$order;
     if($limit != '') $query .= ' LIMIT '.$limit;
     if($offset != '') $query .= ' OFFSET '.$offset;

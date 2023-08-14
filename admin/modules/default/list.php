@@ -109,7 +109,7 @@ if($db !== false){
         if($condition != '') $condition .= ' AND';
         $condition .= ' users REGEXP \'(^|,)'.$_SESSION['user']['id'].'(,|$)\'';
     }
-    
+
     $query_search = db_getRequestSelect($db, 'pm_'.MODULE, getSearchFieldsList($cols), $q_search, $condition, $order.' '.$sort);
 
     $result_total = $db->query($query_search);
